@@ -1,7 +1,11 @@
 import React from 'react'
 
+const test = 'toto'
+
 const Index = () => (
-  <toto>
-    <div>Hello</div>
+  <toto id="hello">
+    {`hello ${test}`}
   </toto>
 )
+
+export default Index
