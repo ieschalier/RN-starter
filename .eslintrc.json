@@ -1,5 +1,9 @@
 {
-    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "extends": ["airbnb", "plugin:flowtype/recommended"],
+    "plugins": [
+        "flowtype"
+      ],
     "env": {
         "browser": true,
         "es6": true
@@ -12,6 +16,12 @@
     },
     "rules": {
         "semi": 0,
-        "react/jsx-filename-extension": 0
-    }
+        "react/jsx-filename-extension": 0,
+        "flowtype/no-types-missing-file-annotation": 0
+    },
+    "settings": {
+        "flowtype": {
+          "onlyFilesWithFlowAnnotation": false
+        }
+      }
 }

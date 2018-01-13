@@ -1,9 +1,11 @@
 {
   "presets": [
-    "babel-preset-react-native-stage-0/decorator-support"
+    "babel-preset-react-native-stage-0/decorator-support",
+    "flow"
   ],
   "env": {
     "development": {
+      "retainLines": true,
       "plugins": [
         "transform-react-jsx-source"
       ]
