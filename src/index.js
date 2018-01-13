@@ -1,14 +1,6 @@
 import React from 'react'
-import styled from 'styled-components/native'
+import SimpleText from './SimpleText'
 
-const Toto = styled.Text`
-  color: red;
-`
-
-const SimpleTex = ({ value }: { value: string }) => (
-  <Toto id="hello">{`hello ${value}`}</Toto>
-)
-
-const Index = () => <SimpleTex value="toto" />
+const Index = () => <SimpleText value="toto" />
 
 export default Index
