@@ -19,6 +19,7 @@
     "lint-staged": "^6.0.0",
     "prettier-eslint": "^8.7.4",
     "react-test-renderer": "16.0.0",
+    "semantic-release": "^11.0.2",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-config-styled-components": "^0.1.1",
@@ -29,7 +30,15 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "release": "semantic-release"
+  },
+  "release": {
+    "branch": "master",
+    "repositoryUrl": "https://github.com/ieschalier/RN-starter",
+    "noCi": true,
+    "verifyConditions": [],
+    "publish": []
   },
   "lint-staged": {
     "src/**/*.js": [
