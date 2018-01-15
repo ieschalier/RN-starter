@@ -44,6 +44,7 @@
     "src/**/*.js": [
       "prettier --write --no-semi --single-quote --trailing-comma all",
       "eslint --fix",
+      "stylelint ./src/**/*js",
       "git add"
     ]
   },
