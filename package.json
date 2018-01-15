@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "@semantic-release/git": "^2.0.2",
     "babel-eslint": "^8.2.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
@@ -37,8 +38,13 @@
     "branch": "master",
     "repositoryUrl": "https://github.com/ieschalier/RN-starter",
     "noCi": true,
-    "verifyConditions": [],
-    "publish": []
+    "verifyConditions": [
+      "@semantic-release/github"
+    ],
+    "getLastRelease": "@semantic-release/git",
+    "publish": [
+      "@semantic-release/github"
+    ]
   },
   "lint-staged": {
     "src/**/*.js": [
