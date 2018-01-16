@@ -4,4 +4,5 @@ import styled from 'styled-components/native'
 export const Toto = styled.Text`
   color: red;
   padding-top: 20px;
+  margin-top: 50px;
 `
